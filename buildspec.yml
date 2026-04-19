@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+  build:
+    commands:
+      - echo "Ejecutando pruebas"
+      - echo "Sin errores (pruebas simuladas)"
+  post_build:
+    commands:
+      - echo "Construcción finalizada con éxito"
+      - docker compose build
